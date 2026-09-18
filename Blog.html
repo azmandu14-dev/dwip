@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Vulnerable Initiatives</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="shadow-lg sticky top-0 z-50">
+    <nav class="bg-green-600 container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <div class="bg-white p-2 rounded">
+          <img src="image/guc.png" alt="Grambangla Unnayan Committee Logo" class="h-10 w-auto">
+        </div>
+        <div class="text-2xl font-bold text-white">Support Vulnerable Initiatives</div>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-yellow-300 text-white">About</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 text-white">What we do</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 text-white">Projects</a></li>
+        <li><a href="#programs" class="hover:text-yellow-300 text-white">Programs</a></li>
+        <li><a href="#donate" class="hover:text-yellow-300 text-white">Donate</a></li>
+      </ul>
+      <a href="#" class="bg-white text-green-600 px-4 py-2 rounded-lg hover:bg-gray-200">Donate</a>
+    </nav>
+
+
+  </header>
+<style>
+   nav {
+    position: relative;
+    z-index: 10; /* Higher z-index to stay above the announcement bar */
+  }
+</style>
+
+ <!-- Script for Announcement Bar Behavior -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const announcementBar = document.getElementById('announcement-bar');
+
+      // Slide down the bar after a short delay
+      setTimeout(() => {
+        announcementBar.style.top = '5.3rem'; // Position it behind the navbar
+      }, 1000); // Delay by 1 second
+
+      // Hide the announcement bar after 8 seconds
+      setTimeout(() => {
+        announcementBar.style.top = '-50px'; // Hide it again
+      }, 9000); // 1-second delay + 8 seconds display
+    });
+  </script>
+
+
+<style>
+  #announcement-bar {
+    position: absolute;
+    top: -50px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    background-color: #f59e0b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 9;
+    transition: top 0.5s ease-in-out;
+  }
+</style>
+
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Announcement Bar -->
+  <div id="announcement-bar">
+    📢 We do not receive funds from Tobacco, Plastic, Fossil fuel, Alcohol and Sweetened Beverage industries!🚫
+  </div>
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg--100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+      <p class="text-lg text-green-700 text-center max-w-3xl mx-auto">We are a global organization committed to ensuring that every child has access to education, healthcare, and a safe environment. Our mission is to create lasting change and empower communities to thrive.</p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Our Programs</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Education</h3>
+          <p class="text-green-700">Providing access to quality education for children in need.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Healthcare</h3>
+          <p class="text-gray-700">Ensuring children receive essential healthcare services.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Child Protection</h3>
+          <p class="text-gray-700">Creating safe environments for children to grow and thrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="donate" class="py-16 bg-green-600 text-green">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Make a Difference Today</h2>
+      <p class="text-lg mb-6">Your support helps us provide essential services to children in need around the world.</p>
+      <a href="#" class="bg-white text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-200">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- Logo Carousel Section -->
+<section class="py-16 bg-white">
+  <h2 class="text-4xl font-bold text-center mb-8">Our Partners</h2>
+  <div class="overflow-hidden relative">
+    <div class="flex gap-8 animate-scroll">
+      <!-- Logo Items -->
+      <img src="image/partners/partner1.png" alt="Logo 1" class="h-20">
+      <img src="image/partners/partner2.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner3.png" alt="Logo 3" class="h-20">
+      <img src="image/partners/partner4.png" alt="Logo 4" class="h-20">
+      <img src="image/partners/partner5.png" alt="Logo 5" class="h-20">
+      <img src="image/partners/partner6.png" alt="Logo 6" class="h-20">
+      <img src="image/partners/partner7.png" alt="Logo 1" class="h-20"> <!-- Repeated for smooth scrolling -->
+      <img src="image/partners/partner8.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner9.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner.png" alt="Logo 2" class="h-20">
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Carousel Container Styling */
+  .overflow-hidden {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  /* Animation for scrolling */
+  .animate-scroll {
+    display: inline-flex;
+    animation: none;
+  }
+
+  /* Keyframes for smooth scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Grambangla Unnayan Committee. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

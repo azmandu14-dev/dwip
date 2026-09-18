@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwip Unnayan Songstha</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="shadow-lg sticky top-0 z-50 w-full">
+  <nav class="bg-[#009BE2] w-full px-6 lg:px-12 py-4">
+  <div class="flex justify-between items-center">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <div class="bg-white p-2 rounded">
+        <img src="image/dus.png" alt="dus_logo" class="h-10 w-auto">
+      </div>
+      <div class="text-lg md:text-2xl font-bold text-white">
+        Dwip Unnayan Songstha
+      </div>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-6">
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#about" class="hover:text-yellow-300">About Us</a></li>
+        <li class="relative group">
+    <a href="#" class="hover:text-yellow-300 flex items-center">
+        Our Initiatives
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+    </a>
+
+    <!-- Dropdown -->
+    <ul class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg hidden group-hover:block z-50">
+        <li>
+            <a href="ongoing-programs.html"
+               class="block px-4 py-3 text-gray-700 hover:bg-green-600 hover:text-white rounded-t-lg">
+                Ongoing Programs
+            </a>
+        </li>
+        <li>
+            <a href="previous-programs.html"
+               class="block px-4 py-3 text-gray-700 hover:bg-green-600 hover:text-white rounded-b-lg">
+                Previous Programs
+            </a>
+        </li>
+        <li>
+            <a href="ongoing-programs.html"
+               class="block px-4 py-3 text-gray-700 hover:bg-green-600 hover:text-white rounded-t-lg">
+                Disaster Response
+            </a>
+        </li>
+        <li>
+            <a href="ongoing-programs.html"
+               class="block px-4 py-3 text-gray-700 hover:bg-green-600 hover:text-white rounded-t-lg">
+                Social Enterprise
+            </a>
+        </li>
+    </ul>
+</li>
+        <li><a href="#about" class="hover:text-yellow-300">Resources</a></li>
+        <li><a href="#programs" class="hover:text-yellow-300">Engagement</a></li>
+        <li><a href="#donate" class="hover:text-yellow-300">Donate</a></li>
+      </ul>
+
+      <a href="#" class="bg-white text-green-600 px-4 py-2 rounded-lg hover:bg-gray-200">
+        Donate
+      </a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden mt-4">
+    <ul class="flex flex-col space-y-4 text-white">
+      <li><a href="#about" class="block hover:text-yellow-300">About</a></li>
+      <li><a href="#about" class="block hover:text-yellow-300">What we do</a></li>
+      <li><a href="#about" class="block hover:text-yellow-300">Projects</a></li>
+      <li><a href="#programs" class="block hover:text-yellow-300">Programs</a></li>
+      <li><a href="#donate" class="block hover:text-yellow-300">Donate</a></li>
+    </ul>
+
+    <a href="#"
+      class="mt-4 inline-block bg-white text-green-600 px-4 py-2 rounded-lg hover:bg-gray-200">
+      Donate
+    </a>
+  </div>
+</nav>
+
+
+  </header>
+<style>
+   nav {
+    position: relative;
+    z-index: 10; /* Higher z-index to stay above the announcement bar */
+  }
+</style>
+
+ <!-- Script for Announcement Bar Behavior -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const announcementBar = document.getElementById('announcement-bar');
+
+      // Slide down the bar after a short delay
+      setTimeout(() => {
+        announcementBar.style.top = '5.3rem'; // Position it behind the navbar
+      }, 1000); // Delay by 1 second
+
+      // Hide the announcement bar after 8 seconds
+      setTimeout(() => {
+        announcementBar.style.top = '-50px'; // Hide it again
+      }, 9000); // 1-second delay + 8 seconds display
+    });
+  </script>
+
+
+<style>
+  #announcement-bar {
+    position: absolute;
+    top: -50px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    background-color: #f59e0b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 9;
+    transition: top 0.5s ease-in-out;
+  }
+</style>
+
+</head>
+<body class="bg-gray-50 font-sans">
+  
+
+
+<!-- Casousel part start -->
+
+<section class="relative py-0">
+  <div class="container mx-auto relative">
+    <div class="swiper mySwiper relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/image_c1.JPG" class="w-full h-[600px] object-cover" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/image_c2.JPG" class="w-full h-[600px] object-cover" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/image_c3.JPG" class="w-full h-[600px] object-cover" alt="Slide 3">
+        </div>
+      </div>
+
+      <!-- Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Green halftone overlay on top -->
+      <div class="absolute bottom-0 left-0 w-full h-48 pointer-events-none halftone-overlay z-20"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+  /* Green halftone overlay effect */
+  .halftone-overlay {
+    background-image:
+      radial-gradient(circle, rgba(0, 147, 70, 0.5) 1px, transparent 1px), /* Green dots */
+      linear-gradient(to top, rgba(0, 147, 70, 0.6), transparent); /* Soft green fade upward */
+    background-size: 6px 6px, 100% 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Keep navigation visible above overlay */
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    z-index: 30;
+  }
+</style>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    effect: 'slide',
+    speed: 1200,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+  <!-- Carousel Section End -->
+ 
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg--100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+      <p class="text-lg text-green-700 text-center max-w-3xl mx-auto">We are a global organization committed to ensuring that every child has access to education, healthcare, and a safe environment. Our mission is to create lasting change and empower communities to thrive.</p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Our Programs</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Education</h3>
+          <p class="text-green-700">Providing access to quality education for children in need.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Healthcare</h3>
+          <p class="text-gray-700">Ensuring children receive essential healthcare services.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h3 class="text-2xl font-bold mb-4">Child Protection</h3>
+          <p class="text-gray-700">Creating safe environments for children to grow and thrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+<section id="donate" class="py-16 bg-[#009BE2] text-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-6">Make a Difference Today</h2>
+    <p class="text-lg mb-6">
+      Your support helps us provide essential services to children in need around the world.
+    </p>
+    <a href="#" class="bg-white text-[#0c4f9d] px-6 py-3 rounded-lg font-medium hover:bg-gray-200">
+      Donate Now
+    </a>
+  </div>
+</section>
+
+  <!-- Logo Carousel Section -->
+<section class="py-16 bg-white">
+  <h2 class="text-4xl font-bold text-center mb-8">Our Partners</h2>
+  <div class="overflow-hidden relative">
+    <div class="flex gap-8 animate-scroll">
+      <!-- Logo Items -->
+      <img src="image/partners/partner1.png" alt="Logo 1" class="h-20">
+      <img src="image/partners/partner2.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner3.png" alt="Logo 3" class="h-20">
+      <img src="image/partners/partner4.png" alt="Logo 4" class="h-20">
+      <img src="image/partners/partner5.png" alt="Logo 5" class="h-20">
+      <img src="image/partners/partner6.png" alt="Logo 6" class="h-20">
+      <img src="image/partners/partner7.png" alt="Logo 1" class="h-20"> <!-- Repeated for smooth scrolling -->
+      <img src="image/partners/partner8.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner9.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner.png" alt="Logo 2" class="h-20">
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Carousel Container Styling */
+  .overflow-hidden {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  /* Animation for scrolling */
+  .animate-scroll {
+    display: inline-flex;
+    animation: none;
+  }
+
+  /* Keyframes for smooth scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+
+  <!-- Footer -->
+
+<footer class="relative w-full aspect-[21/9] bg-cover bg-center text-white"
+        style="background-image: url('image/image_c4.JPG');">
+
+  <!-- Dark transparent overlay -->
+
+  <div class="absolute inset-0 bg-black/55"></div>
+
+  <!-- Content -->
+
+  <div class="relative h-full container mx-auto px-6 flex flex-col justify-end pb-8">
+    <div class="grid md:grid-cols-3 gap-8">
+
+ <!-- Newsletter -->
+<div>
+  <h4 class="text-lg font-semibold mb-3">Newsletter</h4>
+  <p class="text-gray-200 text-sm mb-4">
+    Stay updated with our latest programs, research, and stories from coastal communities.
+  </p>
+
+  <form class="flex flex-col gap-3">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      class="px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+      required
+    >
+
+    <button
+      type="submit"
+      class="bg-yellow-400 text-gray-900 font-semibold py-3 rounded-lg hover:bg-yellow-300 transition duration-300">
+      Subscribe
+    </button>
+  </form>
+</div>
+  <div>
+    <h3 class="text-2xl font-bold mb-2">Dwip Unnayan Songstha</h3>
+    <p class="text-gray-200">
+      Building resilient coastal communities through sustainable development,
+      health, education, and climate action.
+    </p>
+  </div>
+
+  <div>
+    <h4 class="font-semibold mb-2">Quick Links</h4>
+    <ul class="space-y-1 text-gray-200">
+      <li><a href="About_Us.html" class="hover:text-yellow-300">About Us</a></li>
+      <li><a href="Project.html" class="hover:text-yellow-300">Projects</a></li>
+      <li><a href="Research.html" class="hover:text-yellow-300">Research</a></li>
+      <li><a href="Blog.html" class="hover:text-yellow-300">Blog</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h4 class="font-semibold mb-2">Contact</h4>
+    <p class="text-gray-200">Dhaka, Bangladesh</p>
+    <p class="text-gray-200">info@dus.ngo</p>
+    <p class="text-gray-200">+880248110362</p>
+  </div>
+ 
+
+</div>
+
+<div class="border-t border-white/20 mt-6 pt-4 text-center text-sm text-gray-300">
+  © 2026 Dwip Unnayan Songstha. All Rights Reserved.
+</div>
+```
+
+  </div>
+</footer>

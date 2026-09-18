@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppot Vulnerable Initiatives</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <header class="shadow-lg sticky top-0 z-50">
+    <nav class="bg-green-600 container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <div class="bg-white p-2 rounded">
+          <img src="image/guc.png" alt="Grambangla Unnayan Committee Logo" class="h-10 w-auto">
+        </div>
+        <div class="text-2xl font-bold text-white">Grambangla Unnayan Committee</div>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-yellow-300 text-white">ABOUT</a></li>
+        <li><a href="#position" class="hover:text-yellow-300 text-white">OUR POSITION</a></li>
+        <li><a href="#programs" class="hover:text-yellow-300 text-white">PROJECTS</a></li>
+        <li><a href="#team" class="hover:text-yellow-300 text-white">TEAM</a></li>
+        <li><a href="#donate" class="hover:text-yellow-300 text-white">Donate</a></li>
+      </ul>
+      <a href="#donate" class="bg-white text-green-600 px-4 py-2 rounded-lg hover:bg-gray-200">Donate</a>
+    </nav>
+  </header>
+
+<style>
+   nav {
+    position: relative;
+    z-index: 10; /* Higher z-index to stay above the announcement bar */
+  }
+</style>
+
+ <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const announcementBar = document.getElementById('announcement-bar');
+
+      // Slide down the bar after a short delay
+      setTimeout(() => {
+        announcementBar.style.top = '5.3rem'; // Position it behind the navbar
+      }, 1000); // Delay by 1 second
+
+      // Hide the announcement bar after 8 seconds
+      setTimeout(() => {
+        announcementBar.style.top = '-50px'; // Hide it again
+      }, 9000); // 1-second delay + 8 seconds display
+    });
+  </script>
+
+
+<style>
+  #announcement-bar {
+    position: absolute;
+    top: -50px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    background-color: #f59e0b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 9;
+    transition: top 0.5s ease-in-out;
+  }
+</style>
+
+  <div id="announcement-bar">
+    📢 We do not receive funds from Tobacco, Plastic, Fossil fuel, Alcohol and Sweetened Beverage industries!🚫
+  </div>
+
+
+  <section class="relative py-0">
+  <div class="container mx-auto relative">
+    <div class="swiper mySwiper relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/cover3.jpg" class="w-full h-[600px] object-cover" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/cover2.jpg" class="w-full h-[600px] object-cover" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/cover1.jpg" class="w-full h-[600px] object-cover" alt="Slide 3">
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <div class="absolute bottom-0 left-0 w-full h-48 pointer-events-none halftone-overlay z-20"></div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+  /* Green halftone overlay effect */
+  .halftone-overlay {
+    background-image:
+      radial-gradient(circle, rgba(0, 147, 70, 0.5) 1px, transparent 1px), /* Green dots */
+      linear-gradient(to top, rgba(0, 147, 70, 0.6), transparent); /* Soft green fade upward */
+    background-size: 6px 6px, 100% 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Keep navigation visible above overlay */
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    z-index: 30;
+  }
+</style>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    effect: 'slide',
+    speed: 1200,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+  <section id="about" class="py-16 bg--100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">About Us</h2>
+      <p class="text-lg text-green-700 text-center max-w-3xl mx-auto">We are a global organization committed to ensuring that every child has access to education, healthcare, and a safe environment. Our mission is to create lasting change and empower communities to thrive.</p>
+    </div>
+  </section>
+
+
+  <section id="position" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-700">Our Position on Child Labor</h2>
+      
+      <div class="md:flex md:space-x-8 items-start mb-12">
+        <div class="md:w-1/3 mb-6 md:mb-0">
+          <img src="image/child.jpg" alt="Child drawing in a classroom, symbolizing a safe learning environment" class="w-full h-auto object-cover rounded-lg shadow-xl">
+          <p class="text-sm text-gray-500 mt-2 text-center italic">Creating safe spaces for every child to learn and thrive.</p>
+        </div>
+
+        <div class="md:w-2/3">
+          <h3 class="text-3xl font-semibold mb-4 text-gray-800">Eliminating the Worst Forms of Child Labour in Bangladesh</h3>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            The Grambangla Unnayan Committee (**GUC**) stands unequivocally against **all forms of child labour**. Our focus is driven by the reality that millions of children, particularly in Bangladesh's informal urban sectors, are engaged in the **Worst Forms of Child Labour (WFCL)**—work that is hazardous, exploitative, and denies them their fundamental rights to education, health, and a dignified childhood.
+          </p>
+          
+          <a href="#" class="inline-block mt-4 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">Read Our Full Manifesto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="programs" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-700">Our Core Projects</h2>
+      <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-10">Click on any project below to learn about our impact, goals, and methodologies in that specific area.</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer" onclick="window.location.href='#project-clarissa-detail'">
+          <img src="image/project-clarissa.jpg" alt="Children participating in action research" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-gray-800">CLARISSA: Action Research</h3>
+            <p class="text-gray-600 mb-4">Investigating the systemic drivers of the Worst Forms of Child Labour in the leather sector through Participatory Action Research.</p>
+            <span class="text-green-600 font-semibold hover:text-green-800 flex items-center">
+              Discover Project <span class="ml-1 text-xl">→</span>
+            </span>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer" onclick="window.location.href='#project-health-detail'">
+          <img src="image/child.jpg" alt="Children of waste-pickers in a school setting" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-gray-800">Healthy Futures Project</h3>
+            <p class="text-gray-600 mb-4">Providing primary education, vocational training, and essential healthcare for children of waste-pickers and urban informal workers.</p>
+            <span class="text-green-600 font-semibold hover:text-green-800 flex items-center">
+              Discover Project <span class="ml-1 text-xl">→</span>
+            </span>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 shadow-lg rounded-lg overflow-hidden transition duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer" onclick="window.location.href='#project-advocacy-detail'">
+          <img src="image/project-advocacy.jpg" alt="Advocacy campaign for street children's rights" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3 text-gray-800">Street Children Rights Advocacy</h3>
+            <p class="text-gray-600 mb-4">A dedicated initiative to place the voices and needs of marginalized street children on the public and policy agenda in Bangladesh.</p>
+            <span class="text-green-600 font-semibold hover:text-green-800 flex items-center">
+              Discover Project <span class="ml-1 text-xl">→</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      </div>
+  </section>
+  <section id="donate" 
+  class="relative bg-cover bg-center bg-no-repeat py-24 text-white"
+  style="background-image: url('image/donation-bg.jpg');">
+
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <div class="relative container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-6">Thank You for Visiting Us!</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">
+      Your support helps us provide essential services to children in need and build a better future for all.
+    </p>
+    <a href="#" class="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-200 transition">
+      Donate Now
+    </a>
+  </div>
+</section>
+
+
+  <section class="py-16 bg-white">
+  <h2 class="text-4xl font-bold text-center mb-8">Our Partners</h2>
+  <div class="logo-slider overflow-hidden relative">
+    <div class="logo-track flex gap-12 items-center">
+      <img src="image/partners/partner1.png" alt="Logo 1" class="h-20">
+      <img src="image/partners/partner2.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner3.png" alt="Logo 3" class="h-20">
+      <img src="image/partners/partner4.png" alt="Logo 4" class="h-20">
+      <img src="image/partners/partner5.png" alt="Logo 5" class="h-20">
+      <img src="image/partners/partner6.png" alt="Logo 6" class="h-20">
+      <img src="image/partners/partner7.png" alt="Logo 7" class="h-20">
+      <img src="image/partners/partner8.png" alt="Logo 8" class="h-20">
+      <img src="image/partners/partner9.png" alt="Logo 9" class="h-20">
+      <img src="image/partners/partner.png" alt="Logo 10" class="h-20">
+
+      <img src="image/partners/partner1.png" alt="Logo 1" class="h-20">
+      <img src="image/partners/partner2.png" alt="Logo 2" class="h-20">
+      <img src="image/partners/partner3.png" alt="Logo 3" class="h-20">
+      <img src="image/partners/partner4.png" alt="Logo 4" class="h-20">
+      <img src="image/partners/partner5.png" alt="Logo 5" class="h-20">
+      <img src="image/partners/partner6.png" alt="Logo 6" class="h-20">
+      <img src="image/partners/partner7.png" alt="Logo 7" class="h-20">
+      <img src="image/partners/partner8.png" alt="Logo 8" class="h-20">
+      <img src="image/partners/partner9.png" alt="Logo 9" class="h-20">
+      <img src="image/partners/partner.png" alt="Logo 10" class="h-20">
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Container setup */
+  .logo-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Track with infinite scroll */
+  .logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 40s linear infinite;
+  }
+
+  /* Smooth scroll animation */
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Optional: pause on hover */
+  .logo-slider:hover .logo-track {
+    animation-play-state: paused;
+  }
+</style>
+
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Grambangla Unnayan Committee. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>
